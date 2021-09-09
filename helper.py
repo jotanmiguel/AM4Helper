@@ -3,9 +3,9 @@ import math
 dist = int(input("Distância: "))
 print(str(dist) + " kms")
 
-tempo = int(input("Tempo em mins: "))*0.9
-viagens = math.ceil(1080/tempo)
-print(str(tempo) + " = " + str(viagens) + " viagens\dia")
+tempo = int(input("Tempo em mins: "))
+viagens = math.ceil(1080/(tempo*0.9))
+print(str(tempo) + "mins = " + str(viagens) + " viagens\dia")
 
 y = int(input("Demand Passageiros Classe Eco: "))
 yviag = math.floor(y/viagens)
