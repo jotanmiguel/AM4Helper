@@ -5,7 +5,7 @@ print(str(dist) + " kms")
 
 tempo = int(input("Tempo em mins: "))*0.9
 viagens = math.ceil(1080/tempo)
-print(str(viagens) + " viagens")
+print(str(tempo) + " = " + str(viagens) + " viagens\dia")
 
 y = int(input("Demand Passageiros Classe Eco: "))
 yviag = math.floor(y/viagens)
