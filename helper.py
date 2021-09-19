@@ -28,4 +28,5 @@ print("Configuração ideal: " + str(maxpax) + "pax -> " + str(yviag) + "y " + s
 print("\n")
 
 print("Profit/viagem: " + str((0.4 * dist + 170)*yviag + (0.8 * dist + 560)*jviag + (1.2 * dist + 1200)*fviag) + "$")
-print("Profit/dia: " + str(((0.4 * dist + 170)*yviag + (0.8 * dist + 560)*jviag + (1.2 * dist + 1200)*fviag)*viagens) + "$")
+profit = ((0.4 * dist + 170)*yviag + (0.8 * dist + 560)*jviag + (1.2 * dist + 1200)*fviag)
+print("Profit/Dia: " + str(float(profit*viagens)) + "$")
