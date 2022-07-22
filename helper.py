@@ -1,5 +1,13 @@
+class Pax(object):
+    def __init__(self, *args):
+        super(Pax, self).__init__(*args)
+
+class Cargo(object):
+    def __init__(self, *args):
+        super(Cargo, self).__init__(*args)
+        
+
 import math
-import PySimpleGUI as sg
 
 while True:
     dist = int(input("Distância: "))
