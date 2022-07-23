@@ -1,11 +1,15 @@
 from turtle import distance
 
+class Aircraft:
+    def __init__(self, *args):
+        pass        
 
 class Route:
-    def __init__(self, departure=None, arrival=None, distance=None, yDemand = None, jDemand = None, fDemand = None ):
+    def __init__(self, departure=None, arrival=None, distance=None, tempo=None, yDemand = None, jDemand = None, fDemand = None ):
         self.departure = departure
         self.arrival = arrival
         self.distance = distance
+        self.tempo = tempo
 
     def __repr__(self):
         return f"from {self.departure} to {self.arrival}"
@@ -14,8 +18,19 @@ class Pax:
     def __init__(self, route):
         self.route = route
 
-        def SavePaxRoute():
-            pass
+    def SavePaxRoute():
+        routes = open("routes.txt", "a")
+        routes.write("a")
+        routes.close()
+
+    def __repr__(self):
+        """
+        This is the textual representation of the Pax class.
+
+        Returns:
+            str: ---
+        """
+        return f"{self.route}"
         
 class Cargo:
     def __init__(self, *args):
@@ -27,7 +42,7 @@ class Cargo:
 routeTest = Route("LPPT", "LPMA")
 paxTest = Pax(routeTest)
         
-print(routeTest.__str__())
+print(paxTest)
 
 # import math
 
