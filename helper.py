@@ -1,44 +1,66 @@
-class Pax(object):
-    def __init__(self, *args):
-        super(Pax, self).__init__(*args)
+from turtle import distance
 
-class Cargo(object):
+
+class Route:
+    def __init__(self, departure=None, arrival=None, distance=None, yDemand = None, jDemand = None, fDemand = None ):
+        self.departure = departure
+        self.arrival = arrival
+        self.distance = distance
+
+    def __repr__(self):
+        return f"from {self.departure} to {self.arrival}"
+
+class Pax:
+    def __init__(self, route):
+        self.route = route
+
+        def SavePaxRoute():
+            pass
+        
+class Cargo:
     def __init__(self, *args):
         super(Cargo, self).__init__(*args)
+
+    def __str__(self):
+        return f'Pax route from {self.route.departure} to {self.route.arrival}'
+
+routeTest = Route("LPPT", "LPMA")
+paxTest = Pax(routeTest)
         
+print(routeTest.__str__())
 
-import math
+# import math
 
-while True:
-    dist = int(input("Distância: "))
-    print(str(dist) + " kms")
+# while True:
+#     dist = int(input("Distância: "))
+#     print(str(dist) + " kms")
 
-    tempo = int(input("Tempo em mins: "))
-    viagens = math.ceil(1080/(tempo*0.9))
-    print(str(tempo) + "mins = " + str(viagens) + " viagens\dia")
+#     tempo = int(input("Tempo em mins: "))
+#     viagens = math.ceil(1080/(tempo*0.9))
+#     print(str(tempo) + "mins = " + str(viagens) + " viagens\dia")
 
-    y = int(input("Demand Passageiros Classe Eco: "))
-    yviag = math.floor(y/viagens)
-    print("y: " + str(y) + " pax/dia | " + str(yviag) + " pax/viagem")
+#     y = int(input("Demand Passageiros Classe Eco: "))
+#     yviag = math.floor(y/viagens)
+#     print("y: " + str(y) + " pax/dia | " + str(yviag) + " pax/viagem")
 
-    j = int(input("Demand Passageiros Classe Bus: "))
-    jviag = math.floor(j/viagens)
-    print("j: " + str(j) + " pax/dia | " + str(jviag) + " pax/viagem")
+#     j = int(input("Demand Passageiros Classe Bus: "))
+#     jviag = math.floor(j/viagens)
+#     print("j: " + str(j) + " pax/dia | " + str(jviag) + " pax/viagem")
 
-    f = int(input("Demand Passageiros Classe First: "))
-    fviag = math.floor(f/viagens)
-    print("f: " + str(f) + " pax/dia | " + str(fviag) + " pax/viagem")
+#     f = int(input("Demand Passageiros Classe First: "))
+#     fviag = math.floor(f/viagens)
+#     print("f: " + str(f) + " pax/dia | " + str(fviag) + " pax/viagem")
 
-    maxpax = yviag + (2*jviag) + (3*fviag)
+#     maxpax = yviag + (2*jviag) + (3*fviag)
 
-    print("\n")
+#     print("\n")
 
-    print("Configuração ideal: " + str(maxpax) + "pax -> " + str(yviag) + "y " + str(jviag) + "j " + str(fviag) + "f ")
+#     print("Configuração ideal: " + str(maxpax) + "pax -> " + str(yviag) + "y " + str(jviag) + "j " + str(fviag) + "f ")
 
-    print("\n")
+#     print("\n")
 
-    profit = ((0.4 * dist + 170)*yviag + (0.8 * dist + 560)*jviag + (1.2 * dist + 1200)*fviag)
-    print("Profit/viagem: " + str(profit) + "$")
-    print("Profit/Dia: " + str(float(profit*viagens)) + "$")
+#     profit = ((0.4 * dist + 170)*yviag + (0.8 * dist + 560)*jviag + (1.2 * dist + 1200)*fviag)
+#     print("Profit/viagem: " + str(profit) + "$")
+#     print("Profit/Dia: " + str(float(profit*viagens)) + "$")
 
-    print("----------------------------")
+#     print("----------------------------")
