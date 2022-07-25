@@ -1,1 +1,9 @@
 Fleet:
+ 2 -> TP-366 - boeing 747SP
+ 3 -> TP-366 - boeing 747SP
+ 4 -> TP-366 - boeing 747SP
+ 5 -> TP-366 - boeing 747SP
+ 6 -> TP-366 - boeing 747SP
+ 7 -> TP-366 - boeing 747SP
+ 8 -> TP-366 - boeing 747SP
+ 9 -> TP-366 - boeing 747SP
