@@ -1,4 +1,1 @@
 Fleet:
- 0 -> Boeing 747SP with the registration TP-366
- 1 -> Boeing 747SP with the registration TP-366
- 2 -> Boeing 747SP with the registration TP-366

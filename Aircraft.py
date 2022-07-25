@@ -17,12 +17,13 @@ class Aircraft:
         capacity: int,
     ):
         """
-
+        Constructor of this class Aircraft.
 
         Args:
             number (_type_): _description_
             manufacturer (_type_): _description_
             model (_type_): _description_
+            engine (_type): _description_
             speed (_type_): _description_
             range (_type_): _description_
             consumption (_type_): _description_
