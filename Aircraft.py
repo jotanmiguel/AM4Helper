@@ -8,6 +8,7 @@ class Aircraft:
         number: str,
         manufacturer: str,
         model: str,
+        engine: str,
         speed: int,
         range: int,
         consumption: float,
@@ -32,6 +33,7 @@ class Aircraft:
         self.number = number.upper()
         self.manufacturer = manufacturer
         self.model = model
+        self.engine = engine
         self.speed = speed
         self.range = range
         self.consumption = consumption
@@ -46,4 +48,4 @@ class Aircraft:
         Returns:
             str: textual representation of the aircraft.
         """
-        return f"{self.manufacturer} {self.model} with the registration {self.number}"
+        return f"{self.number} - {self.manufacturer} {self.model}"
