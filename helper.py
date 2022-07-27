@@ -1,30 +1,3 @@
-class Airport:
-    """
-    This class represents an unique Airport in the game.
-    """
-
-    def __init__(
-        self, icao: str, name: str, city: str, county: str, lat: float, long: float
-    ):
-        """
-        This is the Airport constructor, where the necessary data is inicialized.
-
-        Args:
-            iata (str): ICAO code for this Airport.
-            name (str): Name of this Airport.
-            city (str): City where this Airport is located.
-            county (str): Country where this Airport is located.
-            lat (float): Latitude coordinate of the Airport location.
-            long (float): Longitude coordinate of the Airport location.
-        """
-        self.icao = icao
-        self.name = name
-        self.city = city
-        self.country = county
-
-    def __repr__(self):
-        pass
-
 class Route:
     """ """
 
