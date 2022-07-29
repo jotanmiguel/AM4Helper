@@ -14,18 +14,18 @@ while True:
     print("large: " + str(large) + " cargo/dia | " + str(largeviag) + " cargo/viagem")
 
     heavy = int(input("Demand Heavy Load: "))
-    heavyviag = math.floor(heavy / viagens)
+    heavyviag =  math.floor(heavy / viagens)
     print("heavy: " + str(heavy) + " cargo/dia | " + str(heavyviag) + " cargo/viagem")
 
 
-    maxcargo = largeviag + heavyviag
+    maxcargo = math.ceil(largeviag + (heavyviag/1.429))
 
     print("\n")
 
     print(
         "Configuração ideal: "
         + str(maxcargo)
-        + "pax -> "
+        + "cargo -> "
         + str(largeviag)
         + "large "
         + str(heavyviag)
