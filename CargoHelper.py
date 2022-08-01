@@ -17,8 +17,8 @@ while True:
     heavyviag =  math.floor(heavy / viagens)
     print("heavy: " + str(heavy) + " cargo/dia | " + str(heavyviag) + " cargo/viagem")
 
-
-    maxcargo = math.ceil(largeviag + (heavyviag/1.429))
+    ratio = 81600/57120
+    maxcargo = math.ceil(largeviag + (heavyviag/ratio))
 
     print("\n")
 
