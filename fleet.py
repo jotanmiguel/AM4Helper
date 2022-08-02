@@ -1,5 +1,4 @@
-import Aircraft as ac
-
+from Classes.Aircraft import Aircraft as ac
 
 def ViewFleet():
     fleet = open("./data/fleet.txt", "r")
@@ -31,7 +30,7 @@ def HighestIndex():
     return int(max([line[1] for line in fleet]))
 
 
-def AddtoFleet(aircraft: ac.Aircraft):
+def AddtoFleet(aircraft: ac):
     """
     Adds to the fleet a new or a not yet registered aircraft.
 
