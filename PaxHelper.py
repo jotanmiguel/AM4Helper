@@ -9,7 +9,8 @@ while True:
     viagens = math.ceil(1080 / (tempo * 0.9))
     print(str(tempo) + "mins = " + str(viagens) + " viagens\dia")
 
-    y = int(input("Demand Passageiros Classe Eco: "))
+    y = int(input
+    ("Demand Passageiros Classe Eco: "))
     yviag = math.floor(y / viagens)
     print("y: " + str(y) + " pax/dia | " + str(yviag) + " pax/viagem")
 
