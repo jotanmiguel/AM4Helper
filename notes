@@ -1,0 +1,4 @@
+1 - Flight time calculator:
+    Easy: time/(speed*1.5)
+    Realism: time/speed
+
