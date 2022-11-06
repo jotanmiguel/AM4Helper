@@ -10,4 +10,4 @@ def calcDistance(departure:Airport, arrival:Airport):
         float: The distance in kilometers.
     """
     
-    return round(geopy.distance.geodesic(departure.coords,arrival.coords).km,2)
+    return round(geopy.distance.geodesic(departure.coords,arrival.coords).km)
